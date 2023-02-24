@@ -12,12 +12,15 @@ function NavBar() {
         <img src='https://cdn4.vectorstock.com/i/1000x1000/57/58/letter-b-logo-icon-vector-23845758.jpg' alt='logo' width='50' />
       </div>
       <div className='flex'>
-        <input className='bg-gray-100 rounded-full
-        pb-2 pt-2 pl-2 pr-10' type='search' name="search" 
-        placeholder='Search Jobs here...  ' />
-        <div>
-          <i><HiSearch /></i>
-        </div>
+        <form>
+          <div className='relative flex items-center'>
+          <HiSearch className='absolute mr-5 ml-40' />
+            <input className='bg-gray-100 rounded-full
+            pb-2 pt-2 pl-2 pr-10' type='search' name="search" 
+            placeholder='Search Jobs here...  ' />
+            
+          </div>
+        </form>
         
       </div>
       <div>
